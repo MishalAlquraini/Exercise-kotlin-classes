@@ -1,7 +1,7 @@
 
 // title after book = its a requirement (constructor
 // it can be after Book or write constructor
-class Book(var title: String, var author: String, var yearPublished: Int){
+class Book(var title: String, var author: String, var yearPublished: Int, var genre: String){
 //    var title: String = ""
 //    var author: String = ""
 //    var yearPublished: Int = 2000
@@ -10,7 +10,7 @@ class Book(var title: String, var author: String, var yearPublished: Int){
 //        println("title= $title, author: $author, Published: $yearPublished")
 //    }
 fun getBookInfo(){
-    println("$title by $author ($yearPublished)")
+    println("$title : $genre by $author ($yearPublished)")
 }
 }
 // name = primary constructor , accNum is a secondary constructor
@@ -26,7 +26,7 @@ fun main() {
    var nbkAcc = bankAcc("Mishal")
     nbkAcc.printInfo()
 
-    var myBook = Book("Journey", "Mishal", 20205)
+    var myBook = Book("Journey", "Mishal", 20205, "Drama")
 //    myBook.author = "Mishal"
 //    myBook.title = "Journey"
 //    myBook.yearPublished = 2025
