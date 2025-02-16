@@ -6,10 +6,12 @@ class Book(var title: String, var author: String, var yearPublished: Int){
 //    var author: String = ""
 //    var yearPublished: Int = 2000
 //    constructor(title: String, author: String, yearPublished: Int)
-
-    fun info(){
-        println("title= $title, author: $author, Published: $yearPublished")
-    }
+//    fun info(){
+//        println("title= $title, author: $author, Published: $yearPublished")
+//    }
+fun getBookInfo(){
+    println("$title by $author ($yearPublished)")
+}
 }
 // name = primary constructor , accNum is a secondary constructor
 class bankAcc(var name: String) {
@@ -28,6 +30,6 @@ fun main() {
 //    myBook.author = "Mishal"
 //    myBook.title = "Journey"
 //    myBook.yearPublished = 2025
-    myBook.info()
-
+//    myBook.info()
+    myBook.getBookInfo()
 }
